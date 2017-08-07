@@ -13,7 +13,7 @@
         {
             get
             {
-                string connection = System.Configuration.ConfigurationManager.ConnectionStrings["NFineDbContext"].ConnectionString;
+                string connection = System.Configuration.ConfigurationManager.ConnectionStrings["BaseDbContext"].ConnectionString;
                 if (Encrypt == true)
                 {
                     return DESEncrypt.Decrypt(connection);
