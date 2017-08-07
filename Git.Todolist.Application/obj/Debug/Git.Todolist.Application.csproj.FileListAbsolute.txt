@@ -1,0 +1,4 @@
+D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Application.dll
+D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Application.pdb
+D:\TestProject\Todolist\Git.Todolist.Application\obj\Debug\Git.Todolist.Application.dll
+D:\TestProject\Todolist\Git.Todolist.Application\obj\Debug\Git.Todolist.Application.pdb

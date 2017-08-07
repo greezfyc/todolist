@@ -1,0 +1,5 @@
+D:\TestProject\Todolist\Git.Todolist.Mapping\bin\Debug\Git.Todolist.Mapping.dll
+D:\TestProject\Todolist\Git.Todolist.Mapping\bin\Debug\Git.Todolist.Mapping.pdb
+D:\TestProject\Todolist\Git.Todolist.Mapping\obj\Debug\Git.Todolist.Mapping.csprojResolveAssemblyReference.cache
+D:\TestProject\Todolist\Git.Todolist.Mapping\obj\Debug\Git.Todolist.Mapping.dll
+D:\TestProject\Todolist\Git.Todolist.Mapping\obj\Debug\Git.Todolist.Mapping.pdb

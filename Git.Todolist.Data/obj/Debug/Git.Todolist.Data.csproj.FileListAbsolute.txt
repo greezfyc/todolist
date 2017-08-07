@@ -1,0 +1,12 @@
+D:\TestProject\Todolist\Git.Todolist.Data\bin\Debug\Git.Todolist.Data.dll
+D:\TestProject\Todolist\Git.Todolist.Data\bin\Debug\Git.Todolist.Data.pdb
+D:\TestProject\Todolist\Git.Todolist.Data\obj\Debug\Git.Todolist.Data.csprojResolveAssemblyReference.cache
+D:\TestProject\Todolist\Git.Todolist.Data\obj\Debug\Git.Todolist.Data.dll
+D:\TestProject\Todolist\Git.Todolist.Data\obj\Debug\Git.Todolist.Data.pdb
+D:\TestProject\Todolist\Git.Todolist.Data\bin\Debug\Git.Todolist.Data.dll.config
+D:\TestProject\Todolist\Git.Todolist.Data\bin\Debug\EntityFramework.dll
+D:\TestProject\Todolist\Git.Todolist.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\TestProject\Todolist\Git.Todolist.Data\bin\Debug\EntityFramework.xml
+D:\TestProject\Todolist\Git.Todolist.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\TestProject\Todolist\Git.Todolist.Data\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\TestProject\Todolist\Git.Todolist.Data\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

@@ -3,9 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.Todolist.Application", "Git.Todolist.Application\Git.Todolist.Application.csproj", "{89B67E07-D345-45D1-BD7F-37AC798384D1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.Todolist.Core", "Git.Todolist.Core\Git.Todolist.Core.csproj", "{8747C604-231C-46EA-8E53-F8903F9A9DD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.Todolist.Data", "Git.Todolist.Data\Git.Todolist.Data.csproj", "{7DB9ACDE-DBC5-49F9-90DC-3FFB9F04FD65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.Todolist.Domain", "Git.Todolist.Domain\Git.Todolist.Domain.csproj", "{DA1F9FA5-34CE-4699-8E96-71CE3DECF23A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.Todolist.Mapping", "Git.Todolist.Mapping\Git.Todolist.Mapping.csproj", "{F5EE9862-FE82-4133-8271-3A895FD4CA98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.Todolist.Repository", "Git.Todolist.Repository\Git.Todolist.Repository.csproj", "{C932EC03-211C-4566-ABC7-A40ED1F7140B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03基础结构层", "03基础结构层", "{ECE111B7-CADE-4620-9D72-AE2928751328}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02应用领域层", "02应用领域层", "{99FCE733-B492-4E8C-A134-FBF847090306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.Todolist.Web", "Git.Todolist.Web\Git.Todolist.Web.csproj", "{39AA5DE7-2DFB-48FB-A79E-6AA8875A3B3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Git.Todolist.Application", "Git.Todolist.Application\Git.Todolist.Application.csproj", "{BEAE58CC-B7D0-4799-B338-4BCAD2CD4F31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01表现层", "01表现层", "{CCDD9135-D537-4753-9178-FE86751CD7F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +29,45 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{89B67E07-D345-45D1-BD7F-37AC798384D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{89B67E07-D345-45D1-BD7F-37AC798384D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{89B67E07-D345-45D1-BD7F-37AC798384D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{89B67E07-D345-45D1-BD7F-37AC798384D1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8747C604-231C-46EA-8E53-F8903F9A9DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8747C604-231C-46EA-8E53-F8903F9A9DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8747C604-231C-46EA-8E53-F8903F9A9DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8747C604-231C-46EA-8E53-F8903F9A9DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB9ACDE-DBC5-49F9-90DC-3FFB9F04FD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB9ACDE-DBC5-49F9-90DC-3FFB9F04FD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB9ACDE-DBC5-49F9-90DC-3FFB9F04FD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB9ACDE-DBC5-49F9-90DC-3FFB9F04FD65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA1F9FA5-34CE-4699-8E96-71CE3DECF23A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA1F9FA5-34CE-4699-8E96-71CE3DECF23A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA1F9FA5-34CE-4699-8E96-71CE3DECF23A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA1F9FA5-34CE-4699-8E96-71CE3DECF23A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5EE9862-FE82-4133-8271-3A895FD4CA98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5EE9862-FE82-4133-8271-3A895FD4CA98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5EE9862-FE82-4133-8271-3A895FD4CA98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5EE9862-FE82-4133-8271-3A895FD4CA98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C932EC03-211C-4566-ABC7-A40ED1F7140B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C932EC03-211C-4566-ABC7-A40ED1F7140B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C932EC03-211C-4566-ABC7-A40ED1F7140B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C932EC03-211C-4566-ABC7-A40ED1F7140B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AA5DE7-2DFB-48FB-A79E-6AA8875A3B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AA5DE7-2DFB-48FB-A79E-6AA8875A3B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AA5DE7-2DFB-48FB-A79E-6AA8875A3B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AA5DE7-2DFB-48FB-A79E-6AA8875A3B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEAE58CC-B7D0-4799-B338-4BCAD2CD4F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEAE58CC-B7D0-4799-B338-4BCAD2CD4F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEAE58CC-B7D0-4799-B338-4BCAD2CD4F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEAE58CC-B7D0-4799-B338-4BCAD2CD4F31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8747C604-231C-46EA-8E53-F8903F9A9DD6} = {ECE111B7-CADE-4620-9D72-AE2928751328}
+		{7DB9ACDE-DBC5-49F9-90DC-3FFB9F04FD65} = {ECE111B7-CADE-4620-9D72-AE2928751328}
+		{DA1F9FA5-34CE-4699-8E96-71CE3DECF23A} = {99FCE733-B492-4E8C-A134-FBF847090306}
+		{F5EE9862-FE82-4133-8271-3A895FD4CA98} = {99FCE733-B492-4E8C-A134-FBF847090306}
+		{C932EC03-211C-4566-ABC7-A40ED1F7140B} = {99FCE733-B492-4E8C-A134-FBF847090306}
+		{39AA5DE7-2DFB-48FB-A79E-6AA8875A3B3A} = {CCDD9135-D537-4753-9178-FE86751CD7F1}
+		{BEAE58CC-B7D0-4799-B338-4BCAD2CD4F31} = {99FCE733-B492-4E8C-A134-FBF847090306}
 	EndGlobalSection
 EndGlobal
