@@ -1,8 +1,8 @@
+D:\TestProject\Todolist\Git.Todolist.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\ApplicationInsights.config
 D:\TestProject\Todolist\Git.Todolist.Web\bin\roslyn\csc.exe
 D:\TestProject\Todolist\Git.Todolist.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\TestProject\Todolist\Git.Todolist.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\roslyn\Microsoft.CSharp.Core.targets
 D:\TestProject\Todolist\Git.Todolist.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
@@ -17,6 +17,9 @@ D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Web.pdb
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Antlr3.Runtime.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\EntityFramework.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\EntityFramework.SqlServer.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Application.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Core.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Domain.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.AI.Agent.Intercept.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.AI.DependencyCollector.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -48,6 +51,13 @@ D:\TestProject\Todolist\Git.Todolist.Web\bin\System.Web.WebPages.Deployment.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\System.Web.WebPages.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\System.Web.WebPages.Razor.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\WebGrease.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Data.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\log4net.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\NPOI.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\ICSharpCode.SharpZipLib.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Application.pdb
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Core.pdb
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Domain.pdb
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.AI.DependencyCollector.xml
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.AI.Web.xml
@@ -77,6 +87,9 @@ D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.Owin.Security.OAuth.xml
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.Owin.Security.Google.xml
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.Owin.Security.Twitter.xml
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Data.pdb
+D:\TestProject\Todolist\Git.Todolist.Web\bin\log4net.xml
+D:\TestProject\Todolist\Git.Todolist.Web\bin\NPOI.xml
 D:\TestProject\Todolist\Git.Todolist.Web\bin\zh-Hans\System.Web.Helpers.resources.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\zh-Hans\System.Web.Mvc.resources.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\zh-Hans\System.Web.Optimization.resources.dll
@@ -96,5 +109,6 @@ D:\TestProject\Todolist\Git.Todolist.Web\bin\zh-Hans\Microsoft.Owin.Security.Fac
 D:\TestProject\Todolist\Git.Todolist.Web\bin\zh-Hans\Microsoft.Owin.Security.Google.resources.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\zh-Hans\Microsoft.Owin.Security.Twitter.resources.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+D:\TestProject\Todolist\Git.Todolist.Web\obj\Debug\Git.Todolist.Web.csprojResolveAssemblyReference.cache
 D:\TestProject\Todolist\Git.Todolist.Web\obj\Debug\Git.Todolist.Web.dll
 D:\TestProject\Todolist\Git.Todolist.Web\obj\Debug\Git.Todolist.Web.pdb

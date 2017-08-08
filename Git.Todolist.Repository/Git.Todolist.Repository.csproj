@@ -43,7 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LogRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Git.Todolist.Core\Git.Todolist.Core.csproj">
+      <Project>{8747c604-231c-46ea-8e53-f8903f9a9dd6}</Project>
+      <Name>Git.Todolist.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Todolist.Data\Git.Todolist.Data.csproj">
+      <Project>{7DB9ACDE-DBC5-49F9-90DC-3FFB9F04FD65}</Project>
+      <Name>Git.Todolist.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Todolist.Domain\Git.Todolist.Domain.csproj">
+      <Project>{DA1F9FA5-34CE-4699-8E96-71CE3DECF23A}</Project>
+      <Name>Git.Todolist.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

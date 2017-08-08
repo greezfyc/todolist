@@ -7,10 +7,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Todolist")]
 [assembly: AssemblyDescription("Todolist")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("NFine团队")]
-[assembly: AssemblyProduct("Todolist（www.nfine.cn）")]
-[assembly: AssemblyCopyright("Copyright © NFine 2016")]
-[assembly: AssemblyTrademark("NFine.Framework")]
+[assembly: AssemblyCompany("Vdou团队")]
+[assembly: AssemblyProduct("Todolist（www.Vdou团队.cn）")]
+[assembly: AssemblyCopyright("Copyright © Vdou团队 2016")]
+[assembly: AssemblyTrademark("Vdou团队")]
 [assembly: AssemblyCulture("")]
 
 // 将 ComVisible 设置为 false 使此程序集中的类型

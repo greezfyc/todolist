@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.0.8.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ReferenceDll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +44,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbLogType.cs" />
+    <Compile Include="LogApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Git.Todolist.Core\Git.Todolist.Core.csproj">
+      <Project>{8747c604-231c-46ea-8e53-f8903f9a9dd6}</Project>
+      <Name>Git.Todolist.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Todolist.Data\Git.Todolist.Data.csproj">
+      <Project>{7db9acde-dbc5-49f9-90dc-3ffb9f04fd65}</Project>
+      <Name>Git.Todolist.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Todolist.Domain\Git.Todolist.Domain.csproj">
+      <Project>{DA1F9FA5-34CE-4699-8E96-71CE3DECF23A}</Project>
+      <Name>Git.Todolist.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -40,7 +40,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="01 Infrastructure\ICreationAudited.cs" />
+    <Compile Include="01 Infrastructure\IDeleteAudited.cs" />
+    <Compile Include="01 Infrastructure\IEntity.cs" />
+    <Compile Include="01 Infrastructure\IModificationAudited.cs" />
+    <Compile Include="ILogRepository.cs" />
+    <Compile Include="LogEntity.cs" />
+    <Compile Include="LogRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Git.Todolist.Core\Git.Todolist.Core.csproj">
+      <Project>{8747c604-231c-46ea-8e53-f8903f9a9dd6}</Project>
+      <Name>Git.Todolist.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Git.Todolist.Data\Git.Todolist.Data.csproj">
+      <Project>{7db9acde-dbc5-49f9-90dc-3ffb9f04fd65}</Project>
+      <Name>Git.Todolist.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

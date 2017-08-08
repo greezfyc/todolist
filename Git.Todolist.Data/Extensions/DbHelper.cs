@@ -1,11 +1,4 @@
-﻿/*******************************************************************************
- * Copyright © 2016 NFine.Framework 版权所有
- * Author: NFine
- * Description: NFine快速开发平台
- * Website：http://www.nfine.cn
-*********************************************************************************/
-
-using System.Configuration;
+﻿using System.Configuration;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
@@ -14,7 +7,7 @@ namespace Git.Todolist.Data.Extensions
 {
     public class DbHelper
     {
-        private static string connstring = ConfigurationManager.ConnectionStrings["NFineDbContext"].ConnectionString;
+        private static string connstring = ConfigurationManager.ConnectionStrings["BaseDbContext"].ConnectionString;
 
         public static int ExecuteSqlCommand(string cmdText)
         {
