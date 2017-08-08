@@ -89,7 +89,7 @@ namespace Git.Todolist.Application
         {
             logEntity.Id = Common.GuId();
             logEntity.Date = DateTime.Now;
-            logEntity.IPAddress = "117.81.192.182";
+            logEntity.IPAddress = Net.Ip;
             logEntity.IPAddressName = Net.GetLocation(logEntity.IPAddress);
             logEntity.Create();
             service.Insert(logEntity);
