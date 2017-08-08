@@ -22,9 +22,9 @@
                 { label: '操作菜单', name: 'ModuleName', width: 100, align: 'left' },
                 {
                     label: '操作类型', name: 'Type', width: 80, align: 'left',
-                    formatter: function (cellvalue) {
-                        return top.clients.dataItems["DbLogType"][cellvalue] == undefined ? "" : top.clients.dataItems["DbLogType"][cellvalue]
-                    }
+                    //formatter: function (cellvalue) {
+                    //    return top.clients.dataItems["DbLogType"][cellvalue] == undefined ? "" : top.clients.dataItems["DbLogType"][cellvalue]
+                    //}
                 },
                 {
                     label: 'IP地址', name: 'IPAddress', width: 230, align: 'left',
@@ -76,7 +76,7 @@
         <div class="btn-group">
             <a id="NF-removelog" authorize="yes" class="btn btn-primary dropdown-text" onclick="btn_removelog()"><i class="fa fa-eraser"></i>清空日志</a>
         </div>
-        <script>$('.toolbar').authorizeButton()</script>
+        @*<script>$('.toolbar').authorizeButton()</script>*@
     </div>
     <div class="search">
         <table>

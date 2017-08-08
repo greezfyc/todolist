@@ -9,3 +9,4 @@ D:\TestProject\Todolist\Git.Todolist.Core\bin\Debug\Newtonsoft.Json.xml
 D:\TestProject\Todolist\Git.Todolist.Core\bin\Debug\NPOI.xml
 D:\TestProject\Todolist\Git.Todolist.Core\obj\Debug\Git.Todolist.Core.dll
 D:\TestProject\Todolist\Git.Todolist.Core\obj\Debug\Git.Todolist.Core.pdb
+D:\TestProject\Todolist\Git.Todolist.Core\obj\Debug\Git.Todolist.Core.csprojResolveAssemblyReference.cache

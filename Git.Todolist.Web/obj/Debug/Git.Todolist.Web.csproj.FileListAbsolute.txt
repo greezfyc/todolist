@@ -112,3 +112,5 @@ D:\TestProject\Todolist\Git.Todolist.Web\bin\zh-Hans\Microsoft.Owin.Security.Mic
 D:\TestProject\Todolist\Git.Todolist.Web\obj\Debug\Git.Todolist.Web.csprojResolveAssemblyReference.cache
 D:\TestProject\Todolist\Git.Todolist.Web\obj\Debug\Git.Todolist.Web.dll
 D:\TestProject\Todolist\Git.Todolist.Web\obj\Debug\Git.Todolist.Web.pdb
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Mapping.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Mapping.pdb

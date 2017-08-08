@@ -551,6 +551,10 @@
       <Project>{da1f9fa5-34ce-4699-8e96-71ce3decf23a}</Project>
       <Name>Git.Todolist.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Git.Todolist.Mapping\Git.Todolist.Mapping.csproj">
+      <Project>{f5ee9862-fe82-4133-8271-3a895fd4ca98}</Project>
+      <Name>Git.Todolist.Mapping</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
