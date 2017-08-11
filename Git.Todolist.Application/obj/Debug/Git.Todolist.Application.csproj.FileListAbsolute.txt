@@ -1,5 +1,6 @@
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Application.dll
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Application.pdb
+D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Autofac.dll
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Core.dll
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Data.dll
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Domain.dll
@@ -7,10 +8,14 @@ D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Newtonsoft.Json.dll
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\log4net.dll
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\NPOI.dll
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\EntityFramework.dll
+D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\MongoDB.Driver.dll
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\MongoDB.Bson.dll
+D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\MongoDB.Driver.Core.dll
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Core.pdb
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Data.pdb
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Git.Todolist.Domain.pdb
+D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Autofac.xml
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Newtonsoft.Json.xml
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\log4net.xml
 D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\NPOI.xml
@@ -19,8 +24,3 @@ D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\zh-Hans\EntityFramewo
 D:\TestProject\Todolist\Git.Todolist.Application\obj\Debug\Git.Todolist.Application.csprojResolveAssemblyReference.cache
 D:\TestProject\Todolist\Git.Todolist.Application\obj\Debug\Git.Todolist.Application.dll
 D:\TestProject\Todolist\Git.Todolist.Application\obj\Debug\Git.Todolist.Application.pdb
-D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Autofac.dll
-D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\MongoDB.Driver.dll
-D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\MongoDB.Bson.dll
-D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\MongoDB.Driver.Core.dll
-D:\TestProject\Todolist\Git.Todolist.Application\bin\Debug\Autofac.xml

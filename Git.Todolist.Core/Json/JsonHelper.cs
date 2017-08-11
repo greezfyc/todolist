@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Git.Todolist.Core
 {
-    public static class Json
+    public static class JsonHelper
     {
         public static object ToJson(this string Json)
         {

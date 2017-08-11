@@ -6,7 +6,7 @@ namespace Git.Todolist.Web
     [HandlerLogin]
     public abstract class ControllerBase : Controller
     {
-        public Log FileLog
+        public Logger FileLog
         {
             get { return LogFactory.GetLogger(this.GetType().ToString()); }
         }

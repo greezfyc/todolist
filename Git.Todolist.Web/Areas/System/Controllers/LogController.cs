@@ -5,9 +5,11 @@ using System.Web;
 using System.Web.Mvc;
 using Git.Todolist.Application;
 using Git.Todolist.Core;
+using Git.Todolist.Core.Aop;
 
 namespace Git.Todolist.Web.Areas.System.Controllers
 {
+    [AOPAttribute]
     public class LogController : ControllerBase
     {
         private LogApp logApp = new LogApp();
@@ -19,8 +21,10 @@ namespace Git.Todolist.Web.Areas.System.Controllers
         }
         [HttpGet]
         [HandlerAjaxOnly]
+        [AOPMethodAttribute(typeof(LogController))]
         public ActionResult GetGridJson(Pagination pagination, string queryJson)
         {
+            FileLog.Debug("sdfss");
             try
             {
                 var data = new
@@ -32,7 +36,7 @@ namespace Git.Todolist.Web.Areas.System.Controllers
                 };
                 return Content(data.ToJson());
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }

@@ -14,14 +14,14 @@ namespace Git.Todolist.Core
             log4net.Config.XmlConfigurator.Configure(configFile);
         }
 
-        public static Log GetLogger(Type type)
+        public static Logger GetLogger(Type type)
         {
-            return new Log(LogManager.GetLogger(type));
+            return new Logger(LogManager.GetLogger(type));
         }
 
-        public static Log GetLogger(string str)
+        public static Logger GetLogger(string str)
         {
-            return new Log(LogManager.GetLogger(str));
+            return new Logger(LogManager.GetLogger(str));
         }
     }
 }

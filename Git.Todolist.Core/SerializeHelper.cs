@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Xml;
@@ -6,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace Git.Todolist.Core
 {
-    public static class Serialize
+    public static class SerializeHelper
     {
         /// <summary>
         /// 获取对象序列化的二进制版本
@@ -70,5 +71,60 @@ namespace Git.Todolist.Core
             XmlSerializer serializer = new XmlSerializer(typeof(T));
             return (T)serializer.Deserialize(xmlReader);
         }
+
+        /// <summary>
+        /// 序列化 对象到字符串；
+        /// 不能序列化IDictionary接口.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public static string XmlSerialize(object obj)
+        {
+            MemoryStream stream = new MemoryStream();
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(obj.GetType());
+                System.Xml.XmlTextWriter xmlTextWriter = new System.Xml.XmlTextWriter(stream, Encoding.UTF8);
+                serializer.Serialize(xmlTextWriter, obj);
+                stream = (MemoryStream)xmlTextWriter.BaseStream;
+                return System.Text.Encoding.UTF8.GetString(stream.GetBuffer());
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("XmlSerialize序列化失败", ex);
+            }
+            finally
+            {
+                stream.Dispose();
+            }
+        }
+
+        /// <summary>
+        /// 序列化 对象到字符串
+        /// 不能序列化IDictionary接口.
+        /// </summary>
+        /// <param name="xml"></param>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static object XmlDeserialize(string xml, Type type)
+        {
+            MemoryStream stream = null;
+            try
+            {
+                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(xml);
+                XmlSerializer serializer = new XmlSerializer(type);
+                stream = new MemoryStream(buffer);
+                return serializer.Deserialize(stream);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("XmlSerialize反序列化失败", ex);
+            }
+            finally
+            {
+                stream.Dispose();
+            }
+        }
+
     }
 }
