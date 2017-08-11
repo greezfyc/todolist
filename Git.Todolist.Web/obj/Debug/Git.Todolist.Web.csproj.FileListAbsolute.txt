@@ -114,3 +114,6 @@ D:\TestProject\Todolist\Git.Todolist.Web\obj\Debug\Git.Todolist.Web.dll
 D:\TestProject\Todolist\Git.Todolist.Web\obj\Debug\Git.Todolist.Web.pdb
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Mapping.dll
 D:\TestProject\Todolist\Git.Todolist.Web\bin\Git.Todolist.Mapping.pdb
+D:\TestProject\Todolist\Git.Todolist.Web\bin\MongoDB.Driver.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\MongoDB.Bson.dll
+D:\TestProject\Todolist\Git.Todolist.Web\bin\MongoDB.Driver.Core.dll

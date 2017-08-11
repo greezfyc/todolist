@@ -21,14 +21,21 @@ namespace Git.Todolist.Web.Areas.System.Controllers
         [HandlerAjaxOnly]
         public ActionResult GetGridJson(Pagination pagination, string queryJson)
         {
-            var data = new
+            try
             {
-                rows = logApp.GetList(pagination, queryJson),
-                total = pagination.total,
-                page = pagination.page,
-                records = pagination.records
-            };
-            return Content(data.ToJson());
+                var data = new
+                {
+                    rows = logApp.GetList(pagination, queryJson),
+                    total = pagination.total,
+                    page = pagination.page,
+                    records = pagination.records
+                };
+                return Content(data.ToJson());
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
         [HttpPost]
         [HandlerAjaxOnly]

@@ -17,3 +17,6 @@ D:\TestProject\Todolist\Git.Todolist.Domain\bin\Debug\zh-Hans\EntityFramework.re
 D:\TestProject\Todolist\Git.Todolist.Domain\obj\Debug\Git.Todolist.Domain.csprojResolveAssemblyReference.cache
 D:\TestProject\Todolist\Git.Todolist.Domain\obj\Debug\Git.Todolist.Domain.dll
 D:\TestProject\Todolist\Git.Todolist.Domain\obj\Debug\Git.Todolist.Domain.pdb
+D:\TestProject\Todolist\Git.Todolist.Domain\bin\Debug\MongoDB.Driver.dll
+D:\TestProject\Todolist\Git.Todolist.Domain\bin\Debug\MongoDB.Bson.dll
+D:\TestProject\Todolist\Git.Todolist.Domain\bin\Debug\MongoDB.Driver.Core.dll

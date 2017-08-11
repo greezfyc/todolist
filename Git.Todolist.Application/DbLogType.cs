@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace NFine.Application
+namespace Git.Todolist.Application
 {
     public enum DbLogType
     {
