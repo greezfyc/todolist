@@ -7,7 +7,7 @@ namespace Git.Todolist.Mapping
     {
         public LogMap()
         {
-            this.ToTable("Sys_Log");
+            this.ToTable("Todolist_Log");
             this.HasKey(t => t.Id);
         }
     }

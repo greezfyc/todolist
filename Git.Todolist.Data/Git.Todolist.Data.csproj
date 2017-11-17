@@ -65,14 +65,13 @@
     <Compile Include="Extensions\EntityInterfaceExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IRepositoryBase.cs" />
-    <Compile Include="Repository\IRepositoryBase.T.cs" />
     <Compile Include="Repository\RepositoryBase.cs" />
-    <Compile Include="Repository\RepositoryBase.T.cs" />
     <Compile Include="Repository\RespositoryBaseMongo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

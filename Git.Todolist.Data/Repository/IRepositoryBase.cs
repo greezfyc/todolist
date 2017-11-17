@@ -7,36 +7,36 @@ using Git.Todolist.Core;
 
 namespace Git.Todolist.Data
 {
-    public interface IRepositoryBase : IDisposable
+    /// <summary>
+    /// 仓储接口
+    /// </summary>
+    /// <typeparam name="TEntity">实体类型</typeparam>
+    public interface IRepositoryBase<TEntity> where TEntity : class, new()
     {
-        IRepositoryBase BeginTrans();
+        int Insert(TEntity entity);
 
-        int Commit();
+        int Insert(List<TEntity> entitys);
 
-        int Insert<TEntity>(TEntity entity) where TEntity : class;
+        int Update(TEntity entity);
 
-        int Insert<TEntity>(List<TEntity> entitys) where TEntity : class;
+        int Delete(TEntity entity);
 
-        int Update<TEntity>(TEntity entity) where TEntity : class;
+        int Delete(Expression<Func<TEntity, bool>> predicate);
 
-        int Delete<TEntity>(TEntity entity) where TEntity : class;
+        TEntity FindEntity(object keyValue);
 
-        int Delete<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class;
+        TEntity FindEntity(Expression<Func<TEntity, bool>> predicate);
 
-        TEntity FindEntity<TEntity>(object keyValue) where TEntity : class;
+        IQueryable<TEntity> IQueryable();
 
-        TEntity FindEntity<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class;
+        IQueryable<TEntity> IQueryable(Expression<Func<TEntity, bool>> predicate);
 
-        IQueryable<TEntity> IQueryable<TEntity>() where TEntity : class;
+        List<TEntity> FindList(string strSql);
 
-        IQueryable<TEntity> IQueryable<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class;
+        List<TEntity> FindList(string strSql, DbParameter[] dbParameter);
 
-        List<TEntity> FindList<TEntity>(string strSql) where TEntity : class;
+        List<TEntity> FindList(Pagination pagination);
 
-        List<TEntity> FindList<TEntity>(string strSql, DbParameter[] dbParameter) where TEntity : class;
-
-        List<TEntity> FindList<TEntity>(Pagination pagination) where TEntity : class, new();
-
-        List<TEntity> FindList<TEntity>(Expression<Func<TEntity, bool>> predicate, Pagination pagination) where TEntity : class, new();
+        List<TEntity> FindList(Expression<Func<TEntity, bool>> predicate, Pagination pagination);
     }
 }

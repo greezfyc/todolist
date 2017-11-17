@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.Common;
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
@@ -15,72 +13,27 @@ namespace Git.Todolist.Data
     /// <summary>
     /// 仓储实现
     /// </summary>
-    public class RepositoryBase : IRepositoryBase, IDisposable
+    /// <typeparam name="TEntity"></typeparam>
+    public class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class, new()
     {
-        private BaseDbContext dbcontext = new BaseDbContext();
-        private DbTransaction dbTransaction { get; set; }
+        public BaseDbContext dbcontext = new BaseDbContext();
 
-        public IRepositoryBase BeginTrans()
-        {
-            DbConnection dbConnection = ((IObjectContextAdapter)dbcontext).ObjectContext.Connection;
-            if (dbConnection.State == ConnectionState.Closed)
-            {
-                dbConnection.Open();
-            }
-            dbTransaction = dbConnection.BeginTransaction();
-            return this;
-        }
-
-        public int Commit()
-        {
-            try
-            {
-                var returnValue = dbcontext.SaveChanges();
-                if (dbTransaction != null)
-                {
-                    dbTransaction.Commit();
-                }
-                return returnValue;
-            }
-            catch (Exception)
-            {
-                if (dbTransaction != null)
-                {
-                    this.dbTransaction.Rollback();
-                }
-                throw;
-            }
-            finally
-            {
-                this.Dispose();
-            }
-        }
-
-        public void Dispose()
-        {
-            if (dbTransaction != null)
-            {
-                this.dbTransaction.Dispose();
-            }
-            this.dbcontext.Dispose();
-        }
-
-        public int Insert<TEntity>(TEntity entity) where TEntity : class
+        public int Insert(TEntity entity)
         {
             dbcontext.Entry<TEntity>(entity).State = EntityState.Added;
-            return dbTransaction == null ? this.Commit() : 0;
+            return dbcontext.SaveChanges();
         }
 
-        public int Insert<TEntity>(List<TEntity> entitys) where TEntity : class
+        public int Insert(List<TEntity> entitys)
         {
             foreach (var entity in entitys)
             {
                 dbcontext.Entry<TEntity>(entity).State = EntityState.Added;
             }
-            return dbTransaction == null ? this.Commit() : 0;
+            return dbcontext.SaveChanges();
         }
 
-        public int Update<TEntity>(TEntity entity) where TEntity : class
+        public int Update(TEntity entity)
         {
             dbcontext.Set<TEntity>().Attach(entity);
             PropertyInfo[] props = entity.GetType().GetProperties();
@@ -93,54 +46,54 @@ namespace Git.Todolist.Data
                     dbcontext.Entry(entity).Property(prop.Name).IsModified = true;
                 }
             }
-            return dbTransaction == null ? this.Commit() : 0;
+            return dbcontext.SaveChanges();
         }
 
-        public int Delete<TEntity>(TEntity entity) where TEntity : class
+        public int Delete(TEntity entity)
         {
             dbcontext.Set<TEntity>().Attach(entity);
             dbcontext.Entry<TEntity>(entity).State = EntityState.Deleted;
-            return dbTransaction == null ? this.Commit() : 0;
+            return dbcontext.SaveChanges();
         }
 
-        public int Delete<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class
+        public int Delete(Expression<Func<TEntity, bool>> predicate)
         {
             var entitys = dbcontext.Set<TEntity>().Where(predicate).ToList();
             entitys.ForEach(m => dbcontext.Entry<TEntity>(m).State = EntityState.Deleted);
-            return dbTransaction == null ? this.Commit() : 0;
+            return dbcontext.SaveChanges();
         }
 
-        public TEntity FindEntity<TEntity>(object keyValue) where TEntity : class
+        public TEntity FindEntity(object keyValue)
         {
             return dbcontext.Set<TEntity>().Find(keyValue);
         }
 
-        public TEntity FindEntity<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class
+        public TEntity FindEntity(Expression<Func<TEntity, bool>> predicate)
         {
             return dbcontext.Set<TEntity>().FirstOrDefault(predicate);
         }
 
-        public IQueryable<TEntity> IQueryable<TEntity>() where TEntity : class
+        public IQueryable<TEntity> IQueryable()
         {
             return dbcontext.Set<TEntity>();
         }
 
-        public IQueryable<TEntity> IQueryable<TEntity>(Expression<Func<TEntity, bool>> predicate) where TEntity : class
+        public IQueryable<TEntity> IQueryable(Expression<Func<TEntity, bool>> predicate)
         {
             return dbcontext.Set<TEntity>().Where(predicate);
         }
 
-        public List<TEntity> FindList<TEntity>(string strSql) where TEntity : class
+        public List<TEntity> FindList(string strSql)
         {
             return dbcontext.Database.SqlQuery<TEntity>(strSql).ToList<TEntity>();
         }
 
-        public List<TEntity> FindList<TEntity>(string strSql, DbParameter[] dbParameter) where TEntity : class
+        public List<TEntity> FindList(string strSql, DbParameter[] dbParameter)
         {
             return dbcontext.Database.SqlQuery<TEntity>(strSql, dbParameter).ToList<TEntity>();
         }
 
-        public List<TEntity> FindList<TEntity>(Pagination pagination) where TEntity : class, new()
+        public List<TEntity> FindList(Pagination pagination)
         {
             bool isAsc = pagination.sord.ToLower() == "asc" ? true : false;
             string[] _order = pagination.sidx.Split(',');
@@ -169,7 +122,7 @@ namespace Git.Todolist.Data
             return tempData.ToList();
         }
 
-        public List<TEntity> FindList<TEntity>(Expression<Func<TEntity, bool>> predicate, Pagination pagination) where TEntity : class, new()
+        public List<TEntity> FindList(Expression<Func<TEntity, bool>> predicate, Pagination pagination)
         {
             bool isAsc = pagination.sord.ToLower() == "asc" ? true : false;
             string[] _order = pagination.sidx.Split(',');
